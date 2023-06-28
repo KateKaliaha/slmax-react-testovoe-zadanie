@@ -1,0 +1,14 @@
+.wrapper {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.wrapper input{
+height: 40px;
+font-size: 24px;
+padding: 5px;
+}
