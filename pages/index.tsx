@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { FC } from "react";
 import Card from "../components/Card";
 
@@ -33,6 +34,10 @@ export const getStaticProps = async () => {
 const Home: FC<HomeProps> = ({ chairs }) => {
 	return (
 		<>
+			<Head>
+				<link rel="shortcut icon" href="/logo.ico" />
+				<title>Main page</title>
+			</Head>
 			{chairs &&
 				chairs.map((el) => {
 					return <Card chair={el} key={el.id} />;

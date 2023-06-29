@@ -2,6 +2,7 @@ import { FC } from "react";
 import { Chair } from "..";
 
 import CardDetails from "@/components/CardDetails";
+import Head from "next/head";
 
 export const getStaticPaths = async () => {
 	const res = await fetch("http://127.0.0.1:3004/chairs");
@@ -45,7 +46,14 @@ const Chair: FC<ChairProps> = ({ chair }) => {
 		return <div> Chair is not existed</div>;
 	}
 
-	return <CardDetails chair={chair} />;
+	return (
+		<>
+			<Head>
+				<title>Item page</title>
+			</Head>
+			<CardDetails chair={chair} />
+		</>
+	);
 };
 
 export default Chair;
