@@ -1,0 +1,84 @@
+{
+  "chairs": [
+    {
+      "id": 1,
+      "name": "Bogema",
+      "price": "605",
+      "color": "синий",
+      "quality": 10,
+      "img": "/bogema.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Bons-T",
+      "price": "415",
+      "color": "серый",
+      "quality": "15",
+      "img": "/bons-t.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Smart 72147",
+      "price": 518,
+      "color": "бежевый",
+      "quality": "10",
+      "img": "/smart.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Major",
+      "price": 579,
+      "color": "зеленый",
+      "quality": 15,
+      "img": "/major.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Corfy",
+      "price": 665,
+      "color": "серый",
+      "quality": 2,
+      "img": "/corfy.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Vitio Happy",
+      "price": 617,
+      "color": "желтый",
+      "quality": 4,
+      "img": "/vitio.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Komfort 11",
+      "price": 936.41,
+      "color": "зеленый",
+      "quality": 3,
+      "img": "/komfort.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Model 81",
+      "price": 899.41,
+      "color": "коричневый",
+      "quality": 14,
+      "img": "/model.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Bremo mod.708",
+      "price": 431.36,
+      "color": "бежевый",
+      "quality": 6,
+      "img": "/bremo.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Columbia",
+      "price": "651.05",
+      "color": "желтый",
+      "quality": 7,
+      "img": "/columbia.jpeg"
+    }
+  ]
+}

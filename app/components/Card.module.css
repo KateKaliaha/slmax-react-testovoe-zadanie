@@ -1,0 +1,47 @@
+.cardPreview {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: solid 2px grey;
+  padding: 20px;
+  font-size: 1.2rem;
+  background: white;
+}
+.content h2 {
+  font-size: 1.4rem;
+}
+
+.img {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  display: inline-block;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #b9833b;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
