@@ -1,18 +1,19 @@
 import CardDetails from "@/app/components/CardDetails";
 import { Chair, getAllChairs } from "@/app/page";
 import { Metadata } from "next";
-
-type Props = {
-	params: {
-		id: string;
-	};
-};
+import { FC } from "react";
 
 export const metadata: Metadata = {
 	title: "Item page"
 };
 
-const getChair = async (id: string) => {
+interface ChairProps {
+	params: {
+		id: string;
+	};
+}
+
+const getChairById = async (id: string) => {
 	const res = await fetch(`http://127.0.0.1:3004/chairs/${id}`, {
 		next: {
 			revalidate: 5
@@ -31,25 +32,9 @@ export const generateStaticParams = async () => {
 	}));
 };
 
-// export const getStaticProps = async (context: { params: { id: string } }) => {
-// 	const { id } = context.params;
-// 	const res = await fetch(`http://127.0.0.1:3004/chairs/${id}`);
-// 	const data = await res.json();
+const Chair: FC<ChairProps> = async ({ params: { id } }) => {
+	const chair = await getChairById(id);
 
-// 	if (!data) {
-// 		return {
-// 			notFound: true
-// 		};
-// 	}
-
-// 	return {
-// 		props: { chair: data },
-// 		revalidate: 5
-// 	};
-// };
-
-const Chair = async ({ params: { id } }: Props) => {
-	const chair = await getChair(id);
 	if (!chair) {
 		return <div> Chair is not existed</div>;
 	}
