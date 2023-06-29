@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Chair } from "../pages";
+import { Chair } from "../page";
 
 type InfoProps = {
 	chair: Chair;

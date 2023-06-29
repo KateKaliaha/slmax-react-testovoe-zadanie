@@ -1,6 +1,6 @@
 import { FC } from "react";
-import styles from "../styles/Inputs.module.css";
 import Input from "./Input";
+import styles from "./Inputs.module.css";
 
 interface InputsValue {
 	name: string;

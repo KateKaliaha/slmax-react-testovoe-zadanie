@@ -11,6 +11,9 @@
   font-size: 1.2rem;
   background: white;
 }
+.content h2 {
+  font-size: 1.4rem;
+}
 
 .img {
   width: 100%;

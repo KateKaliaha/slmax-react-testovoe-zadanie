@@ -1,15 +1,12 @@
-import { Chair } from "@/pages";
+"use client";
 import { FC, useState } from "react";
-import styles from "../styles/CardDetails.module.css";
+import { CardProps } from "./Card";
+import styles from "./CardDetails.module.css";
 import Img from "./Img";
 import Info from "./Info";
 import Inputs from "./Inputs";
 
-interface CardDetailsProps {
-	chair: Chair;
-}
-
-const CardDetails: FC<CardDetailsProps> = ({ chair }) => {
+const CardDetails: FC<CardProps> = ({ chair }) => {
 	const [isEdit, setIsEdit] = useState(false);
 	const [inputsValue, setInputsValue] = useState({
 		name: chair.name,

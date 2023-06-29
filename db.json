@@ -20,8 +20,8 @@
       "id": 3,
       "name": "Smart 72147",
       "price": 518,
-      "color": "желтый",
-      "quality": 1,
+      "color": "бежевый",
+      "quality": "10",
       "img": "/smart.jpeg"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": 10,
       "name": "Columbia",
-      "price": 651.04,
+      "price": "651.05",
       "color": "желтый",
       "quality": 7,
       "img": "/columbia.jpeg"

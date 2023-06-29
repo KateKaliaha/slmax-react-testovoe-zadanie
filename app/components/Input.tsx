@@ -1,16 +1,8 @@
 import { FC } from "react";
 
-// interface InputsValue {
-// 	name: string;
-// 	price: number;
-// 	color: string;
-// 	quality: number;
-// }
-
 interface InputProps {
 	inputsValue: Record<string, string | number>;
 	type: string;
-	// value: string;
 	onChange: (value: Record<string, string | number>) => void;
 }
 

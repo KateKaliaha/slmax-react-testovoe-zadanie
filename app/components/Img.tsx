@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { Chair } from "../pages";
 
 import Image from "next/image";
-import styles from "../styles/Card.module.css";
+import { Chair } from "../page";
+import styles from "./Card.module.css";
 
 type ImgProps = {
 	chair: Chair;

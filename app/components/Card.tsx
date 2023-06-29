@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { FC } from "react";
-import { Chair } from "../pages";
 
-import styles from "../styles/Card.module.css";
+import { Chair } from "../page";
+import styles from "./Card.module.css";
 import Img from "./Img";
 import Info from "./Info";
 
-type CardProps = {
+export interface CardProps {
 	chair: Chair;
-};
+}
 
 const Card: FC<CardProps> = ({ chair }) => {
 	return (
